@@ -15,7 +15,7 @@ if (bonusBalance > 5000) {
 if (amountOfPurchasesInThisMonth > 0) {
     totalBonusPercentage += extraBonusIfNotFirstInMonth;
 } else {
-    totalBonusPercentage = standartBonus;
+    totalBonusPercentage += 0;
 }
 
 console.log(`Процент от покупки: ${totalBonusPercentage}`)
