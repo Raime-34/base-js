@@ -15,4 +15,6 @@ switch (true) {
     case balance > 1000:
         console.log('Постоянный покупатель');
         break;
+    default:
+        console.log('Обычный покупатель');
 }

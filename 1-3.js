@@ -4,14 +4,18 @@ let bonusBalance = 10000,
     extraBonus = 20, 
     extraBonusIfNotFirstInMonth = 5;
 
-let totalBonusPercentage = standartBonus;
+let totalBonusPercentage = 0;
 
 if (bonusBalance > 5000) {
     totalBonusPercentage = extraBonus;
+} else {
+    totalBonusPercentage = standartBonus;
 }
 
 if (amountOfPurchasesInThisMonth > 0) {
     totalBonusPercentage += extraBonusIfNotFirstInMonth;
+} else {
+    totalBonusPercentage = standartBonus;
 }
 
 console.log(`Процент от покупки: ${totalBonusPercentage}`)
